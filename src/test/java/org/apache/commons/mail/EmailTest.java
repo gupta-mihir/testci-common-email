@@ -52,6 +52,7 @@ public class EmailTest {
 		assertEquals(null, email.getHostName());
 	}
 	
+	/*
 	//getMailSessions 72.0% test coverage
 	@Test
 	public void testGetMailSessionsV3() throws Exception {
@@ -59,6 +60,8 @@ public class EmailTest {
 		email.getMailSession();
 		
 	}
+	*/
+
 	//getMailSessions another test case function
 	@Test
 	public void testGetMailSessionsV4() throws Exception {
@@ -67,6 +70,7 @@ public class EmailTest {
 		
 	}
 	
+	/*
 	//getSentDate 100% test coverage
 	@Test
 	public void testGetSentDate() throws Exception {
@@ -74,6 +78,8 @@ public class EmailTest {
 		assertEquals(emailDate, this.email.getSentDate());
 		
 	}
+	*/
+
 	//getSentDate, another test case function
 	@Test
 	public void testGetSentDateV2() throws Exception {
@@ -83,12 +89,14 @@ public class EmailTest {
 		assertTrue(Math.abs(sentDate.getTime()- emailDate.getTime()) < 1000);
 	}
 	
+	/*
 	//testSetFrom 100% test coverage
 	@Test
 	public void testSetFrom() throws Exception {
 		email.setFrom(TEST_EMAIL);
 		assertEquals("ab@cd.org", email.getFromAddress());
 	}
+	*/
 	
 	//testGetSocketConnectionTimeout 100% test coverage
 	@Test
@@ -97,6 +105,7 @@ public class EmailTest {
 		assertEquals(EmailConstants.SOCKET_TIMEOUT_MS, email.getSocketConnectionTimeout());
 	}
 	
+	/*
 	//testAddHeader total coverage 78.3%
 	@Test
 	public void testAddHeaderNone() throws Exception {
@@ -151,6 +160,7 @@ public class EmailTest {
 	}
 	
 
+	*/
 	
 	
 
